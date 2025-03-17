@@ -23,7 +23,7 @@ To color a specific word in a specific line you might use the following syntax:
 There are **no backgroud colors** defined. Instead the `InverseColor` could be used:
 
 ```PowerShell
-An exitcode $([ErrorColor][InverseColor]13) has been returned."
+"An exitcode $([ErrorColor][InverseColor]13) has been returned."
 ```
 
 ![alt text](https://github.com/iRon7/PSStyleTypes/blob/main/ExitCode.png?raw=true)
