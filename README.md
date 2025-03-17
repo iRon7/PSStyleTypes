@@ -20,7 +20,7 @@ To color a specific word in a specific line you might use the following syntax:
 ![alt text](https://github.com/iRon7/PSStyleTypes/blob/main/CommentError.png?raw=true)
 
 ### Example 2
-There are no backgroud colors defined. Instead the `InverseColor` could be used:
+There are **no backgroud colors** defined. Instead the `InverseColor` could be used:
 
 ```PowerShell
 An exitcode $([ErrorColor][InverseColor]13) has been returned."
