@@ -13,10 +13,17 @@ result in a need PowerShell syntax that also makes sure that the orginal (color)
 ### Example 1
 To color a specific word in a specific line you might use the following syntax:
 
-"This is an $([EmphasisColor]'emphasis') and this is an $([ErrorColor]'Error')."
+```PowerShell
+"This is a $([CommentColor]'comment') and this is an $([ErrorColor]'error')."
+```
+
+![alt text](https://github.com/iRon7/PSStyleTypes/blob/main/CommentError.png?raw=true)
 
 ### Example 2
 There are no backgroud colors defined. Instead the `InverseColor` could be used:
 
-
+```PowerShell
 An exitcode $([ErrorColor][InverseColor]13) has been returned."
+```
+
+![alt text](https://github.com/iRon7/PSStyleTypes/blob/main/ExitCode.png?raw=true)
