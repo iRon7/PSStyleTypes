@@ -2,7 +2,7 @@
 Supplies a set of PSStyle types for inline coloring
 
 ## Description
-There are few reasons to [avoid the write-host cmdlet][2] and even for coloring text the use questionable because:
+There are few reasons to [avoid the write-host cmdlet][2] and even for coloring text the use is questionable because:
 
 * Hardcoded colors as e.g. `Yellow` should be avoided as they might conflict with the theme of the host
 * It can only coloring the full line and not a part of it (multiple [Write-Host][3] commands are requied to do so)
