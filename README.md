@@ -8,7 +8,7 @@ There are few reasons to [avoid the write-host cmdlet][2] and even for coloring 
 * It can only color the full line and not a part of it (multiple [Write-Host][3] commands are requied to do so)
 
 For this each color property in [Get-PSReadLineOption][4] is available as a type (e.g. `[CommandColor]`) which
-result in a need PowerShell syntax that also makes sure that the orginal (color) selection is being reset:
+result in a need PowerShell syntax that also ensures that the orginal (color) selection is being reset:
 
 ### Example 1
 To color a specific word in a specific line you might use the following syntax:
