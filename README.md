@@ -27,3 +27,8 @@ An exitcode $([ErrorColor][InverseColor]13) has been returned."
 ```
 
 ![alt text](https://github.com/iRon7/PSStyleTypes/blob/main/ExitCode.png?raw=true)
+
+[1]: https://learn.microsoft.com/dotnet/api/system.management.automation.psstyle "PSStyle Class"
+[2]: https://learn.microsoft.com/powershell/utility-modules/psscriptanalyzer/rules/avoidusingwritehost "avoid the write-host cmdlet"
+[3]: https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/write-host "Write-Host"
+[4]: https://learn.microsoft.com/powershell/module/psreadline/get-psreadlineoption "Get-PSReadLineOption"
