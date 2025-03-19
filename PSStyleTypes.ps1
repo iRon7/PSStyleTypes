@@ -1,5 +1,3 @@
-using module .\..\..\ObjectGraphTools.psm1
-
 Class ANSI {
     # Retrieved from Get-PSReadLineOption
     static [String]$CommandColor
