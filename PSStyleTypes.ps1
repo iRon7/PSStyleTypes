@@ -1,3 +1,5 @@
+using module .\..\..\ObjectGraphTools.psm1
+
 Class ANSI {
     # Retrieved from Get-PSReadLineOption
     static [String]$CommandColor
@@ -53,7 +55,14 @@ Class TextStyle {
         $this.Text = $Text
         $this.AnsiCode = $AnsiCode
     }
-    [String] ToString() { return "$($this.AnsiCode)$($this.Text)$($this.ResetCode)" }
+    [String] ToString() {
+        if ($this.ResetCode -eq [ANSI]::ResetColor) {
+            return "$($this.AnsiCode)$($this.Text.Replace($this.ResetCode, $this.AnsiCode))$($this.ResetCode)"
+        }
+        else {
+            return "$($this.AnsiCode)$($this.Text)$($this.ResetCode)"
+        }
+    }
 }
 Class TextColor : TextStyle { TextColor($Text, $AnsiColor) : base($Text, $AnsiColor, [ANSI]::ResetColor) {} }
 
